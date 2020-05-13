@@ -1,7 +1,6 @@
 import React from "react";
 
 class LoginForm extends React.Component {
-  
 
   state = {
     username: '',
@@ -21,25 +20,12 @@ class LoginForm extends React.Component {
     if (this.state.username && this.state.password) {
     
       return this.props.handleLogin(this.state)
-      
-      
     }
-  
   }
 
-  // handleSendThru = (event) => {
-  //   event.preventDefault()
-  //   this.refs.username.value = ''
-  //   this.refs.password.value = ''
-  //   // this runs before the console.log for the on submit
-  // }
 
   render() {
-  //   console.log(this.props.handleLogin)
-  //   console.log(this.state.username)
-    console.log(this.state)
-    
-    // console.log(this.props.handleLogin)
+
     return (
       <form onSubmit={this.handleSubmit}>
         <div>
